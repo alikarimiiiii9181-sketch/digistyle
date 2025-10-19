@@ -1,0 +1,89 @@
+header {
+    position: absolute;
+    width: 100%;
+    background-color: #0000;
+    z-index: 2;
+
+    nav {
+
+        .sub-menu {
+            display: block;
+        }
+
+        .container {
+            &>ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &>.has-child {
+
+                    &>.sub-mnue {
+                        width: 100%;
+                        padding: 1rem;
+                        z-index: 2;
+                        right: 0;
+                        background-color: #fff;
+                        display: none;
+                        position: absolute;
+                    }
+
+                    &:hover {
+                        &>.sub-mnue {
+                            display: block;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    nav {
+
+        .sub-menu {
+            display: block;
+        }
+
+        .container {
+            div {
+                a {
+                    div {
+                        &>ul {
+
+                            &>.has-child {
+
+                                &>.sub-mnue {
+                                    width: 23rem;
+                                    padding: 1rem;
+                                    z-index: 2;
+                                    right: 0;
+                                    background-color: #fff;
+                                    display: none;
+                                    position: absolute;
+                                }
+
+                                &:hover {
+                                    &>.sub-mnue {
+                                        display: block;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+ul,
+li {
+    list-style: none !important;
+}
